@@ -8,24 +8,15 @@ spl_autoload_register(function($class_name){
 
 
 
-$mngMysql= new manageMsql;
+$db =new Database;
 
-$mngMysql->setHost('');
-$mngMysql->setDb('');
-$mngMysql->setUser('');
-$mngMysql->setPass('');
-$mngMysql->connect('');
+$db->setDriver('mysql');
+
+$db->connection('localhost','school','root','');
 
 
 
 
-$lite= new MSQlLight;
-
-$lite->setHost('');
-$lite->setDb('');
-$lite->setUser('');
-$lite->setPass('');
-$lite->connect('');
 
 
 
