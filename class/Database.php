@@ -22,11 +22,11 @@
 
 			$mngMysql= new manageMsql;
 
-			$mngMysql->setHost('');
-			$mngMysql->setDb('');
-			$mngMysql->setUser('');
-			$mngMysql->setPass('');
-		$this->link	=$mngMysql->connect('');
+			$mngMysql->setHost($host);
+			$mngMysql->setDb($db);
+			$mngMysql->setUser($user);
+			$mngMysql->setPass($password);
+		$this->link	=$mngMysql->connect();
 
  		}elseif ($this->driver=='lite') {
  			$lite= new MSQlLight;
